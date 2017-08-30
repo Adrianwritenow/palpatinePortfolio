@@ -1,0 +1,15 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('https://blogs-images.forbes.com/erikkain/files/2016/12/Rogue-One-Death-Star.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.headings {
+  font-family: decorative;
+}
