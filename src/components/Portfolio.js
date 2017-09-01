@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //IMPORT STYLES
-import '../styles/App.css';
+import '../styles/index.css';
 
 export default class Portfolio extends Component {
   render() {

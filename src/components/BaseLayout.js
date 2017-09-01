@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // IMPORT LINK
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 export default class BaseLayout extends Component {
@@ -25,32 +25,31 @@ export default class BaseLayout extends Component {
       "textShadow": "1px 1px 2px black",
       "fontFamily": "decorative",
     }
-    let navTitle = {
-      "fontFamily": "Serif Gothic",
-      "fontSize": "180%"
-    }
+
     return (
       <div className="container-fluid nav">
         <nav className="row navbar navbar-inverse">
           <div className="container-fluid">
             <div className="navbar-header">
               <ul className="nav navbar-nav">
-                <li style={navTitle}>
-                <Link to="/">Home</Link>
-                  {/*LINK TO HOME PAGE*/}
+                <li>
+                  <NavLink activeClassName="selected" className="nav-link" to="/">Home</NavLink>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
-                    {/*LINK TO MENU PAGE*/}
+                  <NavLink activeClassName="selected" className="nav-link" to="/about">About</NavLink>
                 </li>
                 <li>
-                  <Link to="/portfolio">Portfolio</Link>
-                    {/*LINK TO CONTACT PAGE*/}
+                  <NavLink activeClassName="selected" className="nav-link" to="/portfolio">Portfolio</NavLink>
                 </li>
                 <li>
-                  <Link  activeClassName="selected" to="">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </Link>
+                  <NavLink activeClassName="selected" className="nav-link" to="/refrences">
+                    Refrences
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="selected" className="nav-link" to="/contact">
+                    Contact
+                  </NavLink>
                 </li>
               </ul>
             </div>

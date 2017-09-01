@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import './styles/App.css';
 
 import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import About from './components/About.js';
+import About from './components/About';
 import BaseLayout from './components/BaseLayout';
-import Home from './components/Home.js';
-import Portfolio from './components/Portfolio.js';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import Refrences from './components/References';
+import Contact from './components/Contact';
+
 
 
 ReactDOM.render(
@@ -17,7 +19,9 @@ ReactDOM.render(
        <Switch>
          <Route path="/portfolio" component={Portfolio}/>
          <Route path="/about" component={About}/>
-         <Route path="/" component={Home}/>
+         <Route exact path="/" component={Home}/>
+         <Route path="/refrences" component={Refrences}/>
+         <Route path="/contact" component={Contact}/>
        </Switch>
     </BaseLayout>
    </BrowserRouter>
